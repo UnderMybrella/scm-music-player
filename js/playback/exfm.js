@@ -7,7 +7,7 @@ define(["scm", "playback/soundmanager!", "jquery"], function(SCM, sm, $) {
 					var songIDIndex = url.indexOf("song");
 					var songID = url.substr(songIDIndex);
 					songID = $.trim(songID);
-					var resolveURL = "http://ex.fm/api/v3/" + songID + "?callback=?";
+					var resolveURL = "https://ex.fm/api/v3/" + songID + "?callback=?";
 					current = $.getJSON(resolveURL, function(track) {
 						var url = track.song.url;
 						if (url) {

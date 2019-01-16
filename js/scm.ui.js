@@ -1,7 +1,7 @@
 define(["scm","knockout","underscore"],function(SCM,ko,_){
 
 var skin = ko.observable('skins/tunes/skin.css'),
-  isSelf = location.host.match(/(localhost|scmplayer\.net)/);
+  isSelf = location.host.match(/(localhost|scm\.abimon\.org)/);
 	placement = ko.observable('top'),
 	showPlaylist = ko.observable(false),
 	display = ko.computed(function(){

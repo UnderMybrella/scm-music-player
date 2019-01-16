@@ -24,7 +24,7 @@ body{overflow:hidden; background:transparent; }
 <script type="text/javascript">
 (function(){
  	if(window==window.parent)
-		location.href = 'http://scmplayer.net';
+		location.href = 'https://scm.abimon.org';
 	var addEvent = function(elm, evType, fn) {
 			if(elm.addEventListener) 
 				elm.addEventListener(evType, fn);
@@ -96,17 +96,6 @@ require([
 		}
 		$(window).resize(_.throttle(resize,100));
 		resize();
-
-    var 
-    shown = false,
-    checkAd = function(){
-      if(SCM.showAd() && !shown){
-        $.getScript('http://s3.buysellads.com/ac/bsa.js');
-        shown = true;
-      }
-    };
-    SCM.showAd.subscribe(checkAd);
-    checkAd();
 	});
 </script>
 </body>
